@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { checkUsernameExists, validateRoleName } = require('./auth-middleware');
-const { JWT_SECRET } = require("../secrets"); // use this secret!
+const { JWT_SECRET } = require("../secrets/index.js"); // use this secret!
 
 router.post("/register", validateRoleName, (req, res, next) => {
   /**
