@@ -7,5 +7,5 @@
   developers cloning this repo won't be able to run the project as is.
  */
 module.exports = {
-
+  TOKEN_SECRET: process.env.TOKEN_SECRET || 'shh'
 }
